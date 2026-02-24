@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BUAD 307 In-Person Session Checklist — What to know, bring, and expect for your research participation lab session at USC Marshall.">
+<meta name="theme-color" content="#990000">
+<title>In-Person Session Checklist — BUAD 307</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cardinal: #990000;
+    --cardinal-light: #FFF5F5;
+    --cardinal-border: #F0D0D0;
+    --gold: #FFCC00;
+    --gold-muted: #D4A804;
+    --gold-light: #FFF8E1;
+    --gold-border: #F0E4B8;
+    --ink: #1A1A1A;
+    --ink-soft: #333;
+    --ink-muted: #666;
+    --ink-light: #999;
+    --white: #FFFFFF;
+    --warm-gray: #F8F7F5;
+    --border: #E5E2DD;
+    --border-light: #EEECE8;
+    --success: #16A34A;
+    --success-light: #F0FDF4;
+    --success-border: #BBF7D0;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--warm-gray);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  .header {
+    background: var(--cardinal);
+    color: white;
+    padding: 20px 24px;
+    text-align: center;
+  }
+  .header-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    margin-bottom: 4px;
+  }
+  .header h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+  }
+  .header-sub {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-top: 4px;
+  }
+
+  /* ── Quick Links ── */
+  .quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px 16px;
+    background: white;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .quick-link {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 8px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.15s ease;
+    -webkit-tap-highlight-color: transparent;
+    white-space: nowrap;
+  }
+  .quick-link:active { transform: scale(0.97); }
+  .quick-link-sona {
+    background: #FDF8EC;
+    border: 1px solid #EDD9A3;
+    color: #7A5C00;
+  }
+  .quick-link-sona:hover { background: #FBF2DB; }
+  .quick-link-handout {
+    background: var(--cardinal-light);
+    border: 1px solid var(--cardinal-border);
+    color: var(--cardinal);
+  }
+  .quick-link-handout:hover { background: #FFECEC; }
+  .quick-link-map {
+    background: #F0F7FF;
+    border: 1px solid #C8DDF5;
+    color: #1E4B8F;
+  }
+  .quick-link-map:hover { background: #E3EEFB; }
+  .quick-link-help {
+    background: #F5F0FF;
+    border: 1px solid #DDD0F5;
+    color: #5B3E9E;
+  }
+  .quick-link-help:hover { background: #EDE5FB; }
+  .quick-link-text {
+    background: #F0FDF4;
+    border: 1px solid #BBF7D0;
+    color: #166534;
+  }
+  .quick-link-text:hover { background: #DCFCE7; }
+  .quick-link-icon { font-size: 14px; flex-shrink: 0; }
+
+  /* ── Progress Bar ── */
+  .progress-wrap {
+    background: white;
+    border-bottom: 1px solid var(--border-light);
+    padding: 14px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .progress-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .progress-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-muted);
+  }
+  .progress-count {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--cardinal);
+  }
+  .progress-bar {
+    height: 6px;
+    background: var(--border-light);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--cardinal), #CC0000);
+    border-radius: 3px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 0%;
+  }
+
+  /* ── Container ── */
+  .container {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 16px 16px 100px;
+  }
+
+  /* ── Section ── */
+  .section {
+    margin-bottom: 20px;
+    animation: fadeUp 0.4s ease both;
+  }
+  .section:nth-of-type(1) { animation-delay: 0.0s; }
+  .section:nth-of-type(2) { animation-delay: 0.05s; }
+  .section:nth-of-type(3) { animation-delay: 0.1s; }
+  .section:nth-of-type(4) { animation-delay: 0.15s; }
+  .section:nth-of-type(5) { animation-delay: 0.2s; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 0 4px;
+  }
+  .section-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .section-desc {
+    font-size: 12px;
+    color: var(--ink-light);
+    font-weight: 400;
+    font-family: 'Source Sans 3', sans-serif;
+  }
+  .section-desc a {
+    color: var(--cardinal);
+    text-decoration: underline;
+  }
+
+  /* ── Checklist Card ── */
+  .card {
+    background: white;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-light);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+
+  .check-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--border-light);
+    cursor: pointer;
+    transition: background 0.15s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .check-item:last-child { border-bottom: none; }
+  .check-item:hover { background: var(--warm-gray); }
+  .check-item:active { background: #F0EFED; }
+
+  .check-item.checked {
+    background: var(--success-light);
+  }
+  .check-item.checked .check-text {
+    color: var(--ink-light);
+    text-decoration: line-through;
+    text-decoration-color: var(--success);
+    text-decoration-thickness: 1.5px;
+  }
+  .check-item.checked .check-box {
+    background: var(--success);
+    border-color: var(--success);
+  }
+  .check-item.checked .check-box svg {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .check-box {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    transition: all 0.2s ease;
+    background: white;
+  }
+  .check-box svg {
+    width: 13px;
+    height: 13px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .check-text {
+    font-size: 14px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    transition: all 0.2s ease;
+  }
+  .check-text strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .check-text a {
+    position: relative;
+    z-index: 2;
+  }
+  .check-text .note {
+    display: block;
+    font-size: 12px;
+    color: var(--ink-light);
+    margin-top: 2px;
+    line-height: 1.4;
+  }
+
+  /* ── Callout ── */
+  .callout {
+    margin: 16px 0;
+    padding: 14px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    line-height: 1.5;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .callout-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+  .callout-warn {
+    background: var(--gold-light);
+    border: 1px solid var(--gold-border);
+    color: #7A6400;
+  }
+  .callout-info {
+    background: var(--cardinal-light);
+    border: 1px solid var(--cardinal-border);
+    color: var(--cardinal);
+  }
+  .callout-tip {
+    background: #F0F7FF;
+    border: 1px solid #C8DDF5;
+    color: #1E4B8F;
+  }
+
+  /* ── Reset Button ── */
+  .reset-wrap {
+    text-align: center;
+    margin-top: 24px;
+  }
+  .reset-btn {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink-light);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .reset-btn:hover { color: var(--cardinal); border-color: var(--cardinal-border); background: var(--cardinal-light); }
+
+  /* ── Completion Banner ── */
+  .complete-banner {
+    background: linear-gradient(135deg, var(--success), #15803D);
+    color: white;
+    border-radius: var(--radius);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: none;
+    animation: fadeUp 0.4s ease both;
+  }
+  .complete-banner.show { display: block; }
+  .complete-banner h3 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .complete-banner p {
+    font-size: 13px;
+    opacity: 0.9;
+  }
+
+  /* ── Print ── */
+  @media print {
+    .progress-wrap, .quick-links, .reset-wrap, .complete-banner { display: none !important; }
+    body { background: white; }
+    .header { padding: 12px 16px; }
+    .container { padding: 8px 0; max-width: 100%; }
+    .section { animation: none !important; page-break-inside: avoid; }
+    .check-item { padding: 8px 12px; }
+    .check-box { border-color: #ccc !important; background: white !important; }
+    .check-item.checked .check-box { background: #ccc !important; }
+    .callout { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-label">BUAD 307 · Research Participation</div>
+  <h1>In-Person Session Checklist</h1>
+  <div class="header-sub">What to know, bring, and expect</div>
+</div>
+
+<div class="quick-links">
+  <a href="https://marshall-mkt.sona-systems.com" target="_blank" rel="noopener noreferrer" class="quick-link quick-link-sona">
+    <span class="quick-link-icon">🔗</span> SONA
+  </a>
+  <a href="https://bit.ly/buad307-spring2026" target="_blank" rel="noopener noreferrer" class="quick-link quick-link-handout">
+    <span class="quick-link-icon">📄</span> Handout
+  </a>
+  <a href="https://maps.usc.edu/?id=1928&amp;reference=VPD" target="_blank" rel="noopener noreferrer" class="quick-link quick-link-map">
+    <span class="quick-link-icon">📍</span> Directions
+  </a>
+  <a href="https://students.marshall.usc.edu/research/marshall-behavioral-research-lab/contact" target="_blank" rel="noopener noreferrer" class="quick-link quick-link-help">
+    <span class="quick-link-icon">📬</span> Help
+  </a>
+  <a href="sms:4044464399" class="quick-link quick-link-text">
+    <span class="quick-link-icon">💬</span> Text Us
+  </a>
+</div>
+
+<div class="progress-wrap">
+  <div class="progress-top">
+    <span class="progress-label">Your progress</span>
+    <span class="progress-count" id="progressCount">0 / 22</span>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Completion Banner (hidden until all checked) -->
+  <div class="complete-banner" id="completeBanner">
+    <h3>&#10003; You're All Set!</h3>
+    <p>You've reviewed everything. Good luck with your session!</p>
+  </div>
+
+  <!-- ═══ BEFORE YOU GO ═══ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon" style="background:#FFF8E1;">📋</div>
+      <div>
+        <div class="section-title">Before You Go</div>
+        <div class="section-desc">Prepare the day before or morning of</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Know your SONA ID</strong> — it's the 5- or 6-digit number in your session reminder email.
+          <span class="note">Screenshot it or write it down. You'll need it at check-in.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Confirm your session date and time</strong> on <a href="https://marshall-mkt.sona-systems.com" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" style="color:var(--cardinal);font-weight:600;text-decoration:underline;">SONA</a>.
+          <span class="note">Check the day before — sessions cannot accommodate late arrivals.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Know the location:</strong> VPD LL102 — Verna &amp; Peter Dauterive Hall, lower level.
+          <span class="note">635 Downey Way, Los Angeles, CA 90089. <a href="https://maps.usc.edu/?id=1928&amp;reference=VPD" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" style="color:var(--cardinal);font-weight:600;text-decoration:underline;">USC Campus Map</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=635+Downey+Way+Los+Angeles+CA+90089" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" style="color:var(--cardinal);font-weight:600;text-decoration:underline;">Google Maps</a></span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Only water is allowed</strong> in the lab — no other food or drinks.
+          <span class="note">Eat before you arrive. Sessions last the full scheduled time.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ WHEN YOU ARRIVE ═══ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon" style="background:#F0F7FF;">🚪</div>
+      <div>
+        <div class="section-title">When You Arrive</div>
+        <div class="section-desc">Arrive on time — doors close after check-in. Can't find the lab? <a href="sms:4044464399">Text us</a></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Arrive at the scheduled time.</strong> You'll enter one by one.
+          <span class="note">A research assistant will open the door and check you in.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Give the RA your SONA ID</strong> (5- or 6-digit number) so they can check you off the list.
+          <span class="note">No ID? You can use your name + USC email instead.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Turn your phone completely off</strong> (not just silent) and hand it to the RA.
+          <span class="note">It will be placed in a wall pocket and returned at the end.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Place your bag along the back wall.</strong> You'll receive a post-it with your ID — stick it on your station.</div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Sit at the assigned seat</strong> — the RA will direct you. Don't choose your own.
+          <span class="note">Friends are seated separately to preserve research quality.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Don't touch the computer</strong> until the RA says to begin. Everyone starts together.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ DURING THE SESSION ═══ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon" style="background:#F0FDF4;">💻</div>
+      <div>
+        <div class="section-title">During the Session</div>
+        <div class="section-desc">Follow RA instructions throughout</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Complete studies in the order given by the RA</strong> — not the order shown in your folder.
+          <span class="note">The RA manages the study rotation for research accuracy.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Raise your hand after finishing each study.</strong> An assistant will tell you what to do next.</div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Read instructions carefully and answer honestly.</strong> There are no right or wrong answers.
+          <span class="note">Studies cover marketing topics — surveys, product evaluations, decision scenarios.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>If you finish early, stay quiet.</strong> You can browse the web on the lab computer while you wait.</div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>You cannot leave early.</strong> The session ends at the scheduled time for everyone.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ AFTER THE SESSION ═══ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon" style="background:#F5F0FF;">&#10004;</div>
+      <div>
+        <div class="section-title">After the Session</div>
+        <div class="section-desc">Wrap-up and credit</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Pick up your phone</strong> from the wall pocket on your way out.</div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Credits are posted by end of day.</strong> Check your <a href="https://marshall-mkt.sona-systems.com" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" style="color:var(--cardinal);font-weight:600;text-decoration:underline;">SONA profile</a> to confirm.
+          <span class="note">If credits don't appear within 24 hours, email <a href="mailto:mkt.sona&#64;marshall.usc.edu" onclick="event.stopPropagation()" style="color:var(--ink-muted);text-decoration:underline;">mkt.sona&#64;marshall.usc.edu</a>.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Don't discuss study content</strong> with classmates or other students. This protects research validity.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ KEY POLICIES ═══ -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--cardinal-light);">&#9888;</div>
+      <div>
+        <div class="section-title">Key Policies</div>
+        <div class="section-desc">Important rules to understand</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>One in-person session per semester.</strong> A second session earns no credit — the system tracks participation.
+          <span class="note">If unsure whether you've attended, check your <a href="https://marshall-mkt.sona-systems.com" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" style="color:var(--ink-muted);text-decoration:underline;">SONA credit history</a>.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Late arrivals cannot be admitted.</strong> All participants must start together for research validity — no exceptions.
+          <span class="note">Doors close shortly after the session time. Plan to arrive a few minutes early.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Cancel 8+ hours ahead on <a href="https://marshall-mkt.sona-systems.com" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()" style="color:var(--ink);text-decoration:underline;">SONA</a></strong> if you can't make it (illness, emergency, etc.).
+          <span class="note">No-shows or late cancellations count as unexcused and may affect future scheduling.</span></div>
+      </div>
+      <div class="check-item" onclick="toggle(this)">
+        <div class="check-box"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <div class="check-text"><strong>Your responses are confidential.</strong> They are never shared with your instructor or linked to your identity.
+          <span class="note">Your instructor only receives your final credit total at the end of the term.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Callout -->
+  <div class="callout callout-tip" style="margin-top:4px;">
+    <span class="callout-icon">💡</span>
+    <div>
+      <strong>Tip:</strong> No preparation is needed for the studies themselves. Just come on time with your SONA ID, and the research assistants will guide you through everything.
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="callout callout-info" style="margin-top:0;">
+    <span class="callout-icon">📬</span>
+    <div>
+      <strong>Need help?</strong> Text us at <a href="sms:4044464399" style="color:var(--cardinal);font-weight:600;text-decoration:underline;">(404) 446-4399</a> for day-of logistics, email <a href="mailto:mkt.sona&#64;marshall.usc.edu" style="color:var(--cardinal);font-weight:600;text-decoration:underline;">mkt.sona&#64;marshall.usc.edu</a>, or visit the <a href="https://students.marshall.usc.edu/research/marshall-behavioral-research-lab/contact" target="_blank" rel="noopener noreferrer" style="color:var(--cardinal);font-weight:600;text-decoration:underline;">Lab contact page</a>.
+    </div>
+  </div>
+
+  <!-- Reset -->
+  <div class="reset-wrap">
+    <button class="reset-btn" onclick="resetAll()">Reset Checklist</button>
+  </div>
+
+</div>
+
+<script>
+  const STORAGE_KEY = 'buad307_inperson_checklist';
+
+  function getState() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+    } catch(e) { return {}; }
+  }
+
+  function saveState(state) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+  }
+
+  function toggle(el) {
+    el.classList.toggle('checked');
+    const items = document.querySelectorAll('.check-item');
+    const state = {};
+    items.forEach(function(item, i) { state[i] = item.classList.contains('checked'); });
+    saveState(state);
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const items = document.querySelectorAll('.check-item');
+    const checked = document.querySelectorAll('.check-item.checked').length;
+    const total = items.length;
+    const pct = total > 0 ? (checked / total) * 100 : 0;
+
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressCount').textContent = checked + ' / ' + total;
+
+    const banner = document.getElementById('completeBanner');
+    if (checked === total && total > 0) {
+      banner.classList.add('show');
+    } else {
+      banner.classList.remove('show');
+    }
+  }
+
+  function resetAll() {
+    if (!confirm('Reset all checkboxes?')) return;
+    document.querySelectorAll('.check-item.checked').forEach(function(el) { el.classList.remove('checked'); });
+    saveState({});
+    updateProgress();
+  }
+
+  // Prevent link clicks from toggling checkboxes
+  document.querySelectorAll('.check-item a').forEach(function(link) {
+    link.addEventListener('click', function(e) { e.stopPropagation(); });
+  });
+
+  // Restore state on load
+  (function init() {
+    var state = getState();
+    var items = document.querySelectorAll('.check-item');
+    items.forEach(function(item, i) { if (state[i]) item.classList.add('checked'); });
+    updateProgress();
+  })();
+</script>
+
+</body>
+</html>
